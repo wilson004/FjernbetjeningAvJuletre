@@ -18,3 +18,15 @@ exports.addMessage = functions.https.onRequest((req, res) => {
 
     return res.status(200).send(original);
   });
+
+export const start = functions.https.onRequest((req, res) => {
+    return res.status(200).send("Lysene på juletreet er tent");
+});
+
+export const stop = functions.https.onRequest((req, res) => {
+  return res.status(200).send("Lysene på juletreet er slukket");
+});
+
+export const turn = functions.https.onRequest((req, res) => {
+  return res.status(200).send("Juletreet snurrer rundt");
+});
