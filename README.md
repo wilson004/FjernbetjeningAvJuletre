@@ -5,7 +5,7 @@ Appen består av tre deler: en mobilapp, en backend i firebase og en arduino som
 ## Backend
 Backend består av functions hostet i Firebase. Koden ligger i git-repoet 
 
-###Bygge kode: 
+### Bygge kode: 
 - Ha installert node og npm
 - Sjekke ut kode
 - Installere fire-base tools: npm install -g firebase-tools 
@@ -16,10 +16,10 @@ Backend består av functions hostet i Firebase. Koden ligger i git-repoet
 
 Oppskrift på hvordan komme igang: https://firebase.google.com/docs/functions/get-started?authuser=0
 
-###Oversikt over endepunkt: 
+### Oversikt over endepunkt: 
 https://console.firebase.google.com/project/fjernbetjening-juletre/functions/list
 
-###Betaling: 
+### Betaling: 
 Ikke sett på masse automatiske kall - da må vi betale
 https://firebase.google.com/pricing/?authuser=0
 
