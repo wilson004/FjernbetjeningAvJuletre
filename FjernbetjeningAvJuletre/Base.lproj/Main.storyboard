@@ -19,29 +19,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnq-GB-Pss">
-                                <rect key="frame" x="165" y="71" width="44" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="165" y="100" width="44" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Lys på">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="lysOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xH-By-bV7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSD-ZP-6lX">
+                                <rect key="frame" x="146" y="138" width="82" height="30"/>
+                                <state key="normal" title="Rotasjon på">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotasjonOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffC-HU-cmA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fjernbetjening av Juletre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUa-m4-Tlf">
+                                <rect key="frame" x="60" y="71" width="254" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Mnq-GB-Pss" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0bN-xC-II5"/>
-                            <constraint firstItem="Mnq-GB-Pss" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="oYG-oU-tpd"/>
+                            <constraint firstItem="Mnq-GB-Pss" firstAttribute="centerX" secondItem="lSD-ZP-6lX" secondAttribute="centerX" id="DCQ-6J-Rvp"/>
+                            <constraint firstItem="Mnq-GB-Pss" firstAttribute="top" secondItem="TUa-m4-Tlf" secondAttribute="bottom" constant="8" symbolic="YES" id="TBj-24-0dr"/>
+                            <constraint firstItem="TUa-m4-Tlf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="Vy3-zB-3zT"/>
+                            <constraint firstItem="TUa-m4-Tlf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z5N-TW-CqH"/>
+                            <constraint firstItem="TUa-m4-Tlf" firstAttribute="centerX" secondItem="Mnq-GB-Pss" secondAttribute="centerX" id="a7g-2l-sIB"/>
+                            <constraint firstItem="TUa-m4-Tlf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="lOo-XL-VCz"/>
+                            <constraint firstItem="lSD-ZP-6lX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="obu-yg-Pc5"/>
+                            <constraint firstItem="lSD-ZP-6lX" firstAttribute="top" secondItem="Mnq-GB-Pss" secondAttribute="bottom" constant="8" symbolic="YES" id="rhQ-pd-53R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="lysButton" destination="Mnq-GB-Pss" id="Rzh-1O-IwI"/>
+                        <outlet property="rotasjonButton" destination="lSD-ZP-6lX" id="gWy-1V-Awt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
         </scene>
     </scenes>
 </document>
